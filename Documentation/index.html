@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title -->
+  <title>Vdemy - On-demand Course Selling Platform | LMS</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Fontasosome -->
+  <link rel="stylesheet" href="assets/css/fontasosome.min.css" />
+  <!-- Prism Slider -->
+  <link rel="stylesheet" href="assets/css/prism.css" />
+  <!-- line Awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+  <!-- Main Css -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+  <div class="preloader">
+    <div class="loader-p"></div>
+  </div>
+  <!--==================== Preloader End ====================-->
+  <!--==================== Body Overlay Start ====================-->
+  <div class="body-overlay"></div>
+  <!--==================== Body Overlay End ====================-->
+  <!--==================== Sidebar Overlay Start ====================-->
+  <div class="sidebar-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+  <!-- ==================== Scroll To Top Start ==================== -->
+  <a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
+  <!-- ==================== Scroll To Top End ==================== -->
+  <!-- ====================== Documentation Header Start ========================= -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo_dark.png" alt="Logo" /></a>
+        <button class="navbar-toggler header-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span id="hiddenNav"><i class="las la-bars"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-menu ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">v1.0</a>
+            </li> 
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- ====================== Documentation Header End ========================= -->
+
+  <!-- ==================== Dashboard Start ==================== -->
+  <section class="documentation" class="scrollspy-example bg-body-tertiary" data-bs-offset="80"
+    data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" data-bs-spy="scroll"
+    data-bs-target="#navbar-example2" tabindex="0">
+    <div class="container">
+      <div class="documentation__inner">
+        <div class="sidebar-menu flex-between" id="navbar-example2">
+          <div class="sidebar-menu__inner">
+            <div class="sidebar-menu__logo d-lg-none d-flex">
+              <a href="#" class="sidebar-menu__logo-link">
+                <img src="assets/images/logo_dark.png" alt="" />
+              </a>
+            </div>
+            <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i></span>
+            <form action="*" method="get" class="search-form">
+              <input type="text" name="search" class="form--control" placeholder="Search here..." />
+            </form>
+
+            <ul class="sidebar-menu-list">
+              <li class="sidebar-menu-list__title">Getting Started</li>
+              <li class="sidebar-menu-list__item">
+                <a href="#introduction" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-book-open me-2"></i>Introduction</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#technology_stack" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-layer-group me-2"></i>Technology Stack</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#server_requirements" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-server me-2"></i>Server Requirements</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#installation" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-tools me-2"></i>How To Install</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#activation" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-lock-open me-2"></i>How To Active</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__title">Frontend Installation</li>
+              <li class="sidebar-menu-list__item">
+                <a href="#frontend_installation_intro" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-book-open me-2"></i>Introduction</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#frontend_installation_cpanel_hosting" class="sidebar-menu-list__link">
+                  <span class="text">
+                    <i class="las la-database me-2"></i>
+                    cPanel Hosting
+                  </span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#frontend_installation_manual_build" class="sidebar-menu-list__link">
+                  <span class="text">
+                    <i class="las la-hammer me-2"></i>
+                    Manual Build 
+                  </span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#frontend_installation_next_builder" class="sidebar-menu-list__link">
+                  <span class="text">
+                    <i class="las la-play-circle me-2"></i>
+                    Next.js Builder
+                  </span>
+                </a>
+              </li>
+
+              <li class="sidebar-menu-list__title">Settings</li>
+              <li class="sidebar-menu-list__item">
+                <a href="#general-setting" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-cog me-2"></i>General Setting</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#logo-favicon" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-image me-2"></i>Logo & Favicon</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#system-configuration" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-wrench me-2"></i>System Configuration</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#kyc-setting" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-user-check me-2"></i>KYC Setting</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#social-setting" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-users me-2"></i>Social Login Setting</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__title">Notification & Payment</li>
+              <li class="sidebar-menu-list__item">
+                <a href="#notification-setting" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-bell-slash me-2"></i> Notification Setting</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#payment-gateways" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-wallet me-2"></i>Payment Gateways</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#setup-payment-gateways" class="sidebar-menu-list__link"> 
+                  <span class="text"><i class="las la-cog me-2"></i>Setup Payment Gateways </span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#withdrawal-methods" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-money-bill-wave me-2"></i>Withdrawal Methods</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__title">Others</li>
+              <li class="sidebar-menu-list__item">
+                <a href="#seo-configuration" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-chart-line me-2"></i>SEO Configuration</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#manage-frontend" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-desktop me-2"></i>Manage Frontend</span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#language" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-language me-2"></i>Language </span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#extension" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-puzzle-piece me-2"></i>Extension </span>
+                </a>
+              </li>
+              <li class="sidebar-menu-list__item">
+                <a href="#support" class="sidebar-menu-list__link">
+                  <span class="text"><i class="las la-headset me-2"></i>Support </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        
+        <div class="documentation-body documentation-body__center px-2 px-lg-5">
+          <div id="introduction" class="pb-60 mb-60 border-bottom scroll-element">            
+            <div class="row">
+              <div class="col-xl-9">
+                <div class="documentation-body__inner">      
+                  <span class="sidebar-trigger d-lg-none d-inline-flex"><i class="las la-list"></i></span>
+                  <div class="hero-area each-item" id="introduction-1">
+                    <span class="hero-area-subtitle">
+                      <span class="badge"> Vdemy </span>
+                      Documentation
+                    </span>
+                    <h2 class="hero-area-title">
+                      On-demand Course Selling Platform | LMS
+                    </h2>
+                    <p class="hero-area-text">
+                      Welcome to the documentation for our LMS (Learning Management System) Script, built using Laravel, React, and Next.js. This powerful and scalable platform is designed to help educators, and instructor create, manage, and sell online courses with ease.
+                    </p>
+                    <ul class="hero-area-group">
+                      <li>
+                        <a href="https://next-demo.viserlab.com/vdemy" class="btn btn--base" target="_blank"><i
+                            class="las la-globe me-2"></i> Frontend Demo</a>
+                      </li>
+                      <li>
+                        <a href="https://script.viserlab.com/vdemy/admin" class="btn btn-outline--base"
+                          target="_blank"><i class="las la-globe me-2"></i>Admin Demo</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="explore-area my-80 each-item" id="key-features">
+                    <div class="section-heading">
+                      <h3 class="documentation-body__content-title">
+                        Key Features
+                      </h3>
+                    </div>
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <div class="explore-item">
+                          <div class="explore-item__icon">
+                            <i class="las la-graduation-cap"></i>
+                          </div>
+                          <div class="explore-item__content">
+                            <h6 class="explore-item__title">
+                              Course Management
+                            </h6>
+                            <p class="explore-item__text">
+                              Create, edit, and organize courses effortlessly.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="explore-item">
+                          <div class="explore-item__icon">
+                            <i class="las la-file-video"></i>
+                          </div>
+                          <div class="explore-item__content">
+                            <h6 class="explore-item__title">
+                              Engaging Lecture System
+                            </h6>
+                            <p class="explore-item__text">
+                              Add video, text, and other learning materials to structure lessons. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="explore-item">
+                          <div class="explore-item__icon">
+                            <i class="las la-puzzle-piece"></i>
+                          </div>
+                          <div class="explore-item__content">
+                            <h6 class="explore-item__title">
+                              Interactive Quiz Builder
+                            </h6>
+                            <p class="explore-item__text">
+                              Design quizzes with multiple question types to assess learners. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="explore-item">
+                          <div class="explore-item__icon">
+                            <i class="las la-tag"></i>
+                          </div>
+                          <div class="explore-item__content">
+                            <h6 class="explore-item__title">
+                              Flexible Discount System
+                            </h6>
+                            <p class="explore-item__text">
+                              Offer coupons and promotions to boost enrollments.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="explore-item">
+                          <div class="explore-item__icon">
+                            <i class="las la-certificate"></i>
+                          </div>
+                          <div class="explore-item__content">
+                            <h6 class="explore-item__title">
+                              Automated Certificate Generation
+                            </h6>
+                            <p class="explore-item__text">
+                              Issue certificates upon course completion.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="explore-item">
+                          <div class="explore-item__icon">
+                            <i class="las la-hand-holding-usd"></i>
+                          </div>
+                          <div class="explore-item__content">
+                            <h6 class="explore-item__title">
+                              Payment Integration
+                            </h6>
+                            <p class="explore-item__text">
+                              Supports 30+ secure payment gateways for global transactions.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 d-none d-xl-block">
+              </div>
+            </div>
+          </div>
+
+          <!-- technology_stack -->
+          <div id="technology_stack" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0">
+                    <div class="documentation-body__top mb-0 pb-0">
+                      <h2 class="documentation-body__top-title">
+                        Technology Stack
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        We have used modern technology stack for modern user experience with Single Page Application.
+                      </p>
+                    </div>
+
+                    <div class="tech-container" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Technology stack">
+                      <div class="tech-container-image">
+                        <img src="./assets/images/technology.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item" id="backend-technology">
+                      <h5 class="documentation-body__content-title">
+                        Backend Technologies
+                      </h5> 
+                    
+                      <p><strong>Laravel:</strong> A robust PHP framework designed for the development of scalable web applications, featuring built-in tools for routing, authentication, and database management.</p>
+                      
+                      <p><strong>PHP:</strong> A widely-used server-side scripting language that powers dynamic content generation and seamless database integration for web applications.</p>
+                      
+                      <p><strong>MySQL:</strong> A high-performance, open-source relational database management system, ideal for managing structured data in web-based environments.</p>
+                    </div>
+                    
+                    <div class="documentation-body__content-item each-item" id="frontend-technology">
+                      <h5 class="documentation-body__content-title">
+                        Frontend Technologies
+                      </h5> 
+                    
+                      <p><strong>React:</strong> A JavaScript library for building dynamic and responsive user interfaces through reusable components and an optimized virtual DOM.</p>
+                      
+                      <p><strong>NextJS:</strong> A React-based framework that enables server-side rendering and static site generation for improved performance and SEO optimization.</p>
+                      
+                      <p><strong>Socket.IO:</strong> A real-time communication library that enables bidirectional event-based communication between web clients and servers, ensuring low-latency interactions.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                  <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i>
+                  </span>
+                  <p class="right-sidebar-menu__title">On this page</p>
+                  <div class="right-sidebar-menu__list">
+                    <li class="right-sidebar-menu__item">
+                      <a href="#backend-technology" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Backend Technology</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#frontend-technology" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Frontend Technology</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end technology_stack -->
+
+          <!-- server requirements -->
+          <div id="server_requirements" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="server-configuration">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        Server Requirements
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        To run Vdemy - On-demand Course Selling Platform | LMS smoothly, ensure that your server meets the following minimum requirements:
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item">
+                      <h5 class="documentation-body__content-title">
+                        Server Configuration
+                      </h5>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Web Server::</span>
+                          Apache or Nginix
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">PHP Version:</span>
+                          PHP 8.3 or higher
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Database:</span>
+                          MySQL 8.0+ or MariaDB 10.6+
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Memory Limit:</span>
+                          Minimum 512MB (Recommended: 1GB or higher)
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Disk Space:</span>
+                          At least 1GB free storage (More required based on
+                          product uploads)
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item" id="php-server-extension">
+                      <h5 class="documentation-body__content-title mt-5">
+                        PHP and Server Extension
+                      </h5>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          BCMath PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Ctype PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          cURL PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          DOM PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Fileinfo PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          GD PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          JSON PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Mbstring PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          OpenSSL PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          PCRE PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          PDO PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          pdo_mysql PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Tokenizer PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          XML PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Filter PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Hash PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Session PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Zip PHP Extension
+                        </li>
+                        <li class="documentation-body__list-item">
+                          allow_url_fopen()
+                        </li>
+                        <li class="documentation-body__list-item">
+                          file_get_contents()
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item" id="other-requirements">
+                      <h5 class="documentation-body__content-title mt-5">
+                        Other Requirements
+                      </h5>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">SSL Certificate:</span>
+                          Required for secure transactions (HTTPS)
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Max Upload Size:</span>
+                          Adjust server settings to allow large file uploads
+                          (Recommended: 50MB or more)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                  <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i>
+                  </span>
+                  <p class="right-sidebar-menu__title">On this page</p>
+                  <div class="right-sidebar-menu__list">
+                    <li class="right-sidebar-menu__item">
+                      <a href="#server-configuration" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Server Configuration</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#php-server-extension" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>PHP and Server Extension</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#other-requirements" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Other Requirements</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end server requirements -->
+
+          <!-- installation start -->
+          <div id="installation" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="installation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        Installation
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        Installation is very easy with our Easy Installer. You
+                        can install yourself simply in few steps without any
+                        coding knowledge. We develop our installation system
+                        to make the installation process flawless and easy.
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item install-steps">
+                      <h5 class="documentation-body__content-title">
+                        Installation Steps
+                      </h5>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Upload the whole file to the server you have
+                          downloaded from download after purchase.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Extract/Unzip the file and move all files in the
+                          <code>laravel</code> folder to the main folder(where
+                          you want to install it). Make sure you have moved
+                          the <code>index.php</code> and
+                          <code>.htaccess</code> as well.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Now please browse
+                          http://<code>your-site-url</code>/install/index.php
+                          and follow the process. Your system should be ready
+                          to use.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="docs-artical__area my-5 each-item" id="installation-preview">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-content">
+                          <h3 class="docs-artical-item-title">
+                            Installation Preview
+                          </h3>
+                          <p class="docs-artical-item-text">
+                            Follow these steps to install Vdemy - On-demand Course Selling Platform
+                          </p>
+                        </div>
+                        <div class="docs-artical-item-thumb">
+                          <img src="./assets/images/installation.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                  <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i>
+                  </span>
+                  <p class="right-sidebar-menu__title">On this page</p>
+                  <div class="right-sidebar-menu__list">
+                    <li class="right-sidebar-menu__item">
+                      <a href="#installation-intro" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Installation</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#installation-preview" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Installation Preview</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- installation end -->
+
+          <!-- installation start -->
+          <div id="activation" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="activation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        Activation
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        After installing the system you need to activate it.
+                        When you visit the system, you will be able to see the
+                        activation page. Just provide this information to
+                        activate and run your system. Your provided
+                        information will send to ViserLab server to verify and
+                        <mark>we never collect any sensitive or confidential data</mark>.
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item install-steps">
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Purchase Code</span>
+                          To get purchase code
+                          <a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-"
+                            target="_blank">Click Here</a>.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Envato Username:</span>
+                          Your Envato username with which you bought system.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Email:</span>
+                          Provide your email for further communication.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="docs-artical__area my-5 each-item" id="activation-preview">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-content">
+                          <h3 class="docs-artical-item-title mb-0">
+                            Activation Preview
+                          </h3>
+                        </div>
+                        <div class="docs-artical-item-thumb">
+                          <img src="./assets/images/activation.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                  <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i>
+                  </span>
+                  <p class="right-sidebar-menu__title">On this page</p>
+                  <div class="right-sidebar-menu__list">
+                    <li class="right-sidebar-menu__item">
+                      <a href="#activation-intro" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Activation</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#activation-preview" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Activation Preview</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- installation end -->
+
+          <div id="frontend_installation_intro" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="activation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        Frontend Installation
+                      </h2>
+                      <div class="mt-4 documentation-body__content-item each-item install-steps is_success">
+                        Our scripts are fully ready for cPanel hosting as well as VPS servers. You can use <a
+                          href='https://next.viserlab.com' target='_blank'>this builder</a> to prepare your project for
+                        cPanel hosting.
+                      </div>
+                      <p><strong>We offer full support for cPanel, provided your hosting environment includes Node.js support.</strong> You can utilize our <a href="https://next.viserlab.com/" target="_blank"><strong>Next.js Builder</strong></a> to effortlessly build your project from <a href="https://codecanyon.net/user/viserlab" target="_blank">ViserLab</a> without modifying a single line of code. Alternatively, you have the option to set up everything manually according to your preferences.</p>
+
+                      <br>
+                      <br>
+                      <p>
+                        To install the frontend script, first of all build the script automatically by using our <a href="https://next.viserlab.com/" target="_blank"><strong>Next.js Builder</strong></a> or build <a href="#frontend_installation_manual_build">manually</a> and then go to the <a href="#frontend_installation_cpanel_hosting">cPanel Hosting</a> section
+                      </p>
+
+                      <br>
+                      <br>
+                      <a href="#frontend_installation_next_builder" title="Click here for video tutorial">
+                        <img src="assets/images/thumbnail.png" alt="">
+                      </a>
+                      
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- cPanel-hosting -->
+          <div id="frontend_installation_cpanel_hosting" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="activation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        cPanel Hosting
+                      </h2>
+                      <div class="mt-4 documentation-body__content-item">
+                        <div class="each-step" id="cpanel-hosting-setup-node.js">
+                          <p class="step-header"><span class="step-n">Step 1: </span>Login to your cPanel and click on <strong class="">Setup Node.js App</strong></p>
+                          <img src="./assets/images/step-1.png" alt="Step 1" />
+                        </div>
+                        <div class="each-step" id="cpanel-hosting-create-app">
+                          <p class="step-header"><span class="step-n">Step 2:</span> Click on <strong>Create Application</strong> button. (here you can see the list of all of your node.js applications)</p>
+                          <img src="./assets/images/step-2.png" alt="Step 2">
+                        </div>
+                        <div class="each-step" id="cpanel-hosting-fil-up-form">
+                          <p class="step-header"><span class="step-n">Step 3:</span> Fill up the form as described below: </p>
+                          <ul class="documentation-body__list mt-3"> 
+                            <li class="documentation-body__list-item">
+                              <span class="highlight">Node.js Version:</span> Leave it to recommended one but must have minimum v18 or above.
+                            </li> 
+                            <li class="documentation-body__list-item">
+                              <span class="highlight">Application Mode:</span> It should be production.
+                            </li> 
+                            <li class="documentation-body__list-item">
+                              <span class="highlight">Application Root:</span> It is the place where your file will be stored in file manager(we recommend to put a folder name without public_html, like <code>folder_name</code>).
+                            </li> 
+                            <li class="documentation-body__list-item">
+                              <span class="highlight">Application URL:</span> The URL of the website where your site will be lived. If you host on a subfolder, then it should be like this: https://www.yourwebsite.com/subfolder or you leave to the default one.
+                              <br>
+                              <br>
+                              <div class="mt-4 documentation-body__content-item each-item install-steps">
+                              <p><strong>Note: </strong> If you deploy in a subfolder then it should match with the basePath of your next.config.mjs file when you build manually. Or if you use our Next.js Builder, then the field <strong>Frontend Website URL</strong> should be like this: https://www.yourwebsite.com/subfolder</p>
+                            </div>
+                              <br>
+                              <br>
+                            </li> 
+                            <li class="documentation-body__list-item">
+                              <span class="highlight">Application startup file:</span> server.js 
+                            </li> 
+                          </ul>
+                          <img src="./assets/images/step-3.png" alt="Step 3">
+
+                          <div class="mt-4 documentation-body__content-item each-item install-steps is_success">
+                            If you don't need any extra things like social media login, you leave the <strong>Environment variables</strong> as it is. But <a href="#" data-bs-toggle="modal" data-bs-target="#environmentVariablesModal">click here</a> how you can configure those.
+                            <div class="modal fade" id="environmentVariablesModal" tabindex="-1" aria-labelledby="environmentVariablesModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="environmentVariablesModalLabel">Configure environment variables</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <span>GOOGLE_ID</span>
+                                        <span>Google Client ID</span>
+                                      </li>
+                                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <span>GOOGLE_SECRET</span>
+                                        <span>Google Client Secret</span>
+                                      </li>
+                                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <span>LINKEDIN_CLIENT_ID</span>
+                                        <span>Linkedin Client ID</span>
+                                      </li>
+                                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <span>LINKEDIN_CLIENT_SECRET</span>
+                                        <span>Linkedin Client Secret</span>
+                                      </li>
+                                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <span>FACEBOOK_CLIENT_ID</span>
+                                        <span>Facebook Client ID</span>
+                                      </li>
+                                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <span>FACEBOOK_CLIENT_SECRET</span>
+                                        <span>Facebook Client Secret</span>
+                                      </li>
+                                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <span>NEXTAUTH_URL</span>
+                                        <span style="max-width: 300px;">Auth URL configure for your website. You should put there yourdomain name including the basepath of the next.js build, then add /api/auth at the end.</span>
+                                      </li>
+                                      <li class="list-group-item d-flex align-items-center justify-content-between">
+                                        <span>NEXTAUTH_SECRET</span>
+                                        <span>Put any random string here.</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <p>After filling the form and and adding needed environment variables(please click on the done button after adding variables), click on the <strong>Create</strong> button on the top right corner.</p>
+                        </div>
+
+                        <div class="each-step" id="cpanel-hosting-upload-file">
+                          <p class="step-header"><span class="step-n">Step 4:</span> From the step 3, you as you created the application, now in the file manager you have to upload the built zip file as following and extract it in the folder: </p>
+                          <img src="./assets/images/step-4.1.png" alt="Image" />
+                          <img src="./assets/images/step-4.2.png" alt="Image" />
+                        </div>
+                        <div class="each-step" id="cpanel-hosting-install-and-start">
+                          <p class="step-header"><span class="step-n">Step 5:</span> After uploading the files on the appropriate folder, stop the server and click on <strong>Run NPM Install</strong> button. After a successful install, start your server again. Your application is live now.  </p>
+                          <img src="./assets/images/step-5.png" alt="Image" />
+                          
+                          <div class="mt-4 documentation-body__content-item each-item install-steps">
+                            Note: each time you change environment variables you have to restart the server.
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                  <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i>
+                  </span>
+                  <p class="right-sidebar-menu__title">On this page</p>
+                  <div class="right-sidebar-menu__list">
+                    <li class="right-sidebar-menu__item">
+                      <a href="#cpanel-hosting-setup-node.js" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Setup Node.js App</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#cpanel-hosting-create-app" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Create Application</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#cpanel-hosting-fil-up-form" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Fill Up Required Form</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#cpanel-hosting-upload-file" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Upload file in file manager</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#cpanel-hosting-install-and-start" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Install and start the server</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- endOf cPanel-hosting -->
+
+          <!-- manual-build -->
+          <div id="frontend_installation_manual_build" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="activation-intro"> 
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        Manual Build
+                      </h2>
+
+                      <div class="documentation-body__content-item each-item" id="manual-build-prequirements">
+                        <h6 class="documentation-body__content-title">
+                          Prerequisites for manual build
+                        </h6>
+                        <ul class="documentation-body__list mt-3">
+                          <li class="documentation-body__list-item">
+                            <span class="highlight"><a href="https://nodejs.org/en/download" target="_blank">Node.js</a> : minimum <strong>v18.0.0</strong> is required on your machine.</span>
+                          </li>
+                          <li class="documentation-body__list-item">
+                            <span class="highlight"><a href="https://nodejs.org/en/download" target="_blank">NPM</a> : node package manager.</span>
+                          </li>
+                          <li class="documentation-body__list-item">
+                            <span class="highlight">Code Editor:</span> Any code editor you prefer to modify some files
+                          </li>
+                        </ul>
+                      </div>
+                      
+                      <div class="each-step">
+                        <p>After purchasing the script from codecanyon you have the following folder structure. Copy the <strong>next</strong> folder from here to somewhere else, to building it or you can do it right here.</p>
+                        <!-- File tree start -->
+                        <div class="file-tree">
+                          <ul>
+                            <li>
+                              <details open>
+                                <summary><i class="fa fa-folder"></i> Downloaded folder...</summary>
+                                <ul>
+                                  <li>
+                                    <summary><i class="fa fa-folder"></i> documentation</summary>
+                                  </li>
+                                  <li>
+                                    <details>
+                                      <summary><i class="fa fa-folder"></i> laravel</summary>
+                                      <ul>
+                                        <li>
+                                          <details>
+                                            <summary><i class="fa fa-folder"></i> core</summary>
+                                            <ul>
+                                              <li><i class="fa fa-code"></i> Project Files <span>- Source code of project</span></li>
+                                            </ul>
+                                          </details>
+                                        </li>
+                                        <li>
+                                          <details>
+                                            <summary><i class="fa fa-folder"></i> assets</summary>
+                                            <ul>
+                                              <li><i class="fa fa-code"></i> assets files <span>- essential assets files</span></li>
+                                            </ul>
+                                          </details>
+                                        </li>
+                                        <li><i class="fa fa-code"></i> .htaccess</li>
+                                        <li><i class="fa fa-code"></i> index.php</li>
+                                      </ul>
+                                    </details>
+                                  </li>
+                                  <li>
+                                    <details open>
+                                      <summary><i class="fa fa-folder"></i> next</summary>
+                                      <ul>
+                                        <li>
+                                          <summary><i class="fa fa-folder"></i> app </summary>
+                                          <summary><i class="fa fa-folder"></i> lib </summary>
+                                          <summary><i class="fa fa-folder"></i> public </summary>
+                                          <summary><i class="fa fa-folder"></i> store </summary>
+                                        </li>
+                                        <li><i class="fa fa-code"></i> package.json <span>- Dependencies</span></li>
+                                        <li><i class="fa-solid fa-gear"></i> next.config.mjs <span>- Next.js configuration file</span></li>
+                                        <li><i class="fa fa-code"></i> Other files <span>- other files for the project</span></li>
+                                      </ul>
+                                    </details>
+                                  </li>
+                                </ul>
+                              </details>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- File tree end -->
+                      <div class="each-step step" id="manual-build-download-node"> 
+                        <p class="step-header"><span class="step-n">Step 1.</span> If you did not download the node.js yet, download it from <a href="https://nodejs.org/en/download" target="_blank">here</a></p>
+                      </div>
+                      <div class="each-step step" id="manual-build-version-check">
+                        <p class="mb-3 step-header"><span class="step-n">Step 2.</span> Check node.js and npm version from terminal.</p>
+                        <img src="./assets/images/node_npm_version.png" alt="">
+                      </div>
+
+                      <div class="each-step step" id="manual-build-install-package">
+                        <p class="mb-3 step-header"><span class="step-n">Step 3.</span> Now, open your project path in the terminal and run <code>npm install</code> as following</p>
+                        <img src="./assets/images/npm_install.png" alt="">
+                      </div>
+
+                      <div class="each-step step" id="manual-build-config-file">
+                        <p class="mb-3 step-header"><span class="step-n">Step 4.</span> Open your project in any code editor and edit the <code>.env</code> file and the <code>next.config.mjs</code> file and update as following: </p>
+
+                        <br>
+                        <h6>📜  Instructions for the  <code>.env</code> file: </h6>
+                        <p class="mb-2"><strong>1. NEXT_PUBLIC_AUTH_PREFIX:</strong> If you wish to run your website in some kind of subfolder, then put the subfolder name here, e.g. /frontend</p>
+                        <p class="mb-2"><strong>2. NEXT_PUBLIC_SITE_TITLE:</strong> Your website title</p>
+                        <p class="mb-2"><strong>3. NEXT_PUBLIC_API_URL:</strong> The url of your API where the backend is running(please put it without the trailing slash)</p>
+                        <p class="mb-2"><strong>4. NEXT_PUBLIC_SOCKET_SERVER:</strong> If your script is required to use socket.io, then put the socket server url here else ignore it.</p>
+
+                        <br>
+                        <h6>📜 Instructions for the <code>next.config.mjs</code> file:</h6>
+                        <p class="mb-2"><strong>basePath:</strong> If you want to run your website inside a subfolder, specify the subfolder name here (e.g., <code>/frontend</code>). Otherwise, leave it empty or remove it.</p>
+                        <p class="mb-2"><strong>domains:</strong> Enter your backend URL's domain here to allow images to load correctly. Make sure you just put the domain name without the protocol (e.g. <code>example.com</code>).</p>
+                        
+                        
+                        <img src="./assets/images/env_config.png" alt="Env config file">
+                      </div>
+
+                      <div class="each-step step" id="manual-build-build-project">
+                        <p class="mb-3 step-header"><span class="step-n">Step 5.</span> After completing the above steps, now open your project in the terminal and run <code>npm run build</code> as following to build your project.</p>
+                        <img src="./assets/images/stp-5.png" alt="Build">
+                      </div>
+
+                      <div class="each-step step" id="manual-build-file-zip">
+                        <p class="mb-3 step-header"><span class="step-n">Step 6.</span> After building your project, please select the <code>.next</code>, <code>package.json</code>, <code>next.config.mjs</code> and <code>server.js</code> file and make a zip file and to deploy with cPanel, please go to <a href="#frontend_installation_cpanel_hosting">cPanel Hosting</a> section.</p>
+                        <img src="./assets/images/step-6.png" alt="Zip and upload">
+                      </div>
+
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                  <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i>
+                  </span>
+                  <p class="right-sidebar-menu__title">On this page</p>
+                  <div class="right-sidebar-menu__list">
+                    <li class="right-sidebar-menu__item">
+                      <a href="#manual-build-prequirements" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Prerequisites</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#manual-build-download-node" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Download Node.js</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#manual-build-version-check" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Check Version</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#manual-build-install-package" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Install Packages</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#manual-build-config-file" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>File Configuration</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#manual-build-build-project" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Build Project</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#manual-build-file-zip" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Zip file for deployment</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- endOf manual-build -->
+
+          <!-- next-builder -->
+          <div id="frontend_installation_next_builder" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-12">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="activation-intro"> 
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        Next.js Builder
+                      </h2>
+
+                      
+                      <p>Please watch the following video and for details please read the documentation properly.</p>
+                      <br>
+                      <iframe width="100%" height="420" src="https://www.youtube.com/embed/V_qTxGk1wlU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      
+                        <br><br>
+                      <p>With your purchase code and username you can use our next.js builder to download a zip file to directly upload on cPanel to make it live.</p>
+                      
+                      <div class="row my-4 mb-5">
+                        <div class="col-lg-6">
+                          <p>Mandatory fields to build the script: </p>
+                          <div class="documentation-body__content-item each-item">
+                            <ul class="documentation-body__list mt-3"> 
+                              <li class="documentation-body__list-item">
+                                <span class="highlight">Admin Panel URL:</span> Admin Pane's URL of the php script, e.g. https://youradmin.com/admin
+                              </li>
+                              <li class="documentation-body__list-item mb-3">
+                                <span class="highlight">Frontend Website URL:</span> Frontend website url where your next.js application will live. e.g. https://yourwebsite.com or https://www.yourwebsite.com/subfolder
+                              </li>
+                              <li class="documentation-body__list-item mb-3">
+                                <span class="highlight">Site Title:</span> Website title of the frontend website
+                              </li>
+                              <li class="documentation-body__list-item mb-3">
+                                <span class="highlight">Username :</span> Your envato username
+                              </li>
+                              <li class="documentation-body__list-item mb-3">
+                                <span class="highlight">Purchase Code :</span> Purchase code you got from codecanyon after purchasing the script
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="w-100">
+                            <img class="img-fluid" src="./assets/images/installation-1.png" alt="next builder basic information">
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <br>
+                      <p>Done with building the project ? go to <a href="#frontend_installation_cpanel_hosting">cPanel Hosting</a> to see how to upload your project on cPanel</p>
+                    </div> 
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <!-- endOf next-builder -->
+
+          <!-- Start General Settings -->
+          <div id="general-setting" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="setting-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        General Setting
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        The General Settings page allows administrators to
+                        configure essential site-wide settings for the
+                        Vdemy – On-demand Course Selling Platform | LMS. Below are the
+                        available options.
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item" id="site-title">
+                      <h6 class="documentation-body__content-title">
+                        Site Title
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          The Site Title is the name of your system.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          It appears in the browser tab, and various
+                          parts of the platform.
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="documentation-body__content-item" id="currency">
+                      <h6 class="documentation-body__content-title">
+                        Currency
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Set the default currency for transactions.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Example: USD, EUR, GBP, INR
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="documentation-body__content-item" id="currency-symbol">
+                      <h6 class="documentation-body__content-title">
+                        Currency Symbol
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Define the symbol associated with the selected
+                          currency.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Example: $ for USD, € for EUR, ₹ for INR
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="documentation-body__content-item" id="timezone">
+                      <h6 class="documentation-body__content-title">
+                        Timezone
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Set the default timezone for the system.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          This affects timestamps, order records, and user
+                          activities.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Example: America/New_York, Asia/Dhaka
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="documentation-body__content-item" id="base-color">
+                      <h6 class="documentation-body__content-title">
+                        Base Color
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Choose the primary color for the website’s theme.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          This color is applied to buttons, links, and other
+                          UI elements.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="documentation-body__content-item" id="base-color">
+                      <h6 class="documentation-body__content-title">
+                        Secondary Color
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          This is the secondary color of the website’s theme.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          This color used in some of section background like footer, top selling course and etc.
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="documentation-body__content-item" id="pagination">
+                      <h6 class="documentation-body__content-title">
+                        Records to Display Per Page
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Set the number of records displayed per page in
+                          lists such as products, orders, and users.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Example: 20, 50, 100
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="documentation-body__content-item" id="currency-format">
+                      <h6 class="documentation-body__content-title">
+                        Currency Showing Format
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Define how the currency should be displayed across
+                          the site.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Example formats:
+                          <ul class="documentation-body__list mt-3">
+                            <li class="documentation-body__list-item">
+                              $100.00 (Show Currency Symbol Only)
+                            </li>
+                            <li class="documentation-body__list-item">
+                              100.00 USD (Show Currency Text Only )
+                            </li>
+                            <li class="documentation-body__list-item">
+                              $100.00 USD (Show Currency Text and Symbol Both
+                              )
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <div class="docs-artical__area my-5 each-item" id="setting-preview">
+                      <div class="docs-artical-item"> 
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/setting.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                  <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i>
+                  </span>
+                  <p class="right-sidebar-menu__title">On this page</p>
+                  <div class="right-sidebar-menu__list">
+                    <li class="right-sidebar-menu__item">
+                      <a href="#setting-intro" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Site title</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#currency" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Currency</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#currency-symbol" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Currency Symbol</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#base-color" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Base Color</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#pagination" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Pagination</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#currency-format" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Currency format</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End General Settings -->
+
+          <!-- Start Logo & Favicon -->
+          <div id="logo-favicon" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="logo-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        Logo & Favicon
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        The Logo & Favicon settings allow you to upload
+                        branding elements for your Vdemy script. These assets help create a professional
+                        and recognizable identity for your platform.
+                      </p>
+                    </div>
+ 
+                    <div class="documentation-body__content-item" id="site-title">
+                      <h6 class="documentation-body__content-title">
+                        Logo
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Recommended Format: PNG with a transparent
+                          background
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="documentation-body__content-item" id="site-title">
+                      <h6 class="documentation-body__content-title">
+                        Favicon
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          The favicon is the small icon displayed in the
+                          browser tab.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Recommended Size: 32x32px or 48x48px
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="docs-artical__area each-item" id="logo-preview">
+                      <div class="docs-artical-item"> 
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/logo_favicon.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                  <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i>
+                  </span>
+                  <p class="right-sidebar-menu__title">On this page</p>
+                  <div class="right-sidebar-menu__list">
+                    <li class="right-sidebar-menu__item">
+                      <a href="#logo-intro" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Logo & Favicon</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#logo-preview" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Preview</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Logo & Favicon -->
+
+          <!-- Start Logo & Favicon -->
+          <div id="system-configuration" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-12">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        System Configuration
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        The System Configuration page allows administrators to
+                        manage essential settings for the backend
+                        functionality of Vdemy – On-demand Course Selling Platform | LMS. These settings control various aspects of
+                        the system, such as Email Verification.
+                      </p>
+                    </div>
+
+                    <div class="docs-artical__area mb-80 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/system_configuration.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Logo & Favicon -->
+
+          <!-- Start KYC Setting -->
+          <div id="kyc-setting" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-12">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        KYC Setting
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        Vdemy includes KYC (Know Your Customer)
+                        verification to ensure secure transactions and
+                        compliance with platform policies. This feature helps
+                        verify user identities before they can perform certain
+                        actions like withdrawals, selling products, or
+                        accessing restricted features.
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item" id="site-title">
+                      <h6 class="documentation-body__content-title">
+                        KYC Verification Process
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Submit Required Documents
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Admin Review & Approval
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Access Granted
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="docs-artical__area mb-80 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/kyc.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End KYC Setting -->
+
+          <!-- Start Social Setting -->
+          <div id="social-setting" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-12">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        Social Login Setting
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        Vedemy allows users to log in and interact using
+                        their social media accounts. The Social Settings
+                        section enables you to configure authentication and
+                        integration for popular platforms like Google,
+                        Facebook, and LinkedIn.
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item" id="site-title">
+                      <h6 class="documentation-body__content-title">
+                        Google Login
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Enable users to sign in using their Google account.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Requires
+                          <span class="highlight">Google Client ID</span> and
+                          <span class="highlight">Client Secret</span> from
+                          the Google Developer Console.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="documentation-body__content-item" id="site-title">
+                      <h6 class="documentation-body__content-title">
+                        Facebook Login
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Allow users to log in via Facebook for a seamless
+                          experience.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Requires
+                          <span class="highlight">Facebook App ID</span> and
+                          <span class="highlight">App Secret</span> from the
+                          Facebook Developer Portal.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="documentation-body__content-item" id="site-title">
+                      <h6 class="documentation-body__content-title">
+                        LinkedIn Login
+                      </h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Users can log in using their LinkedIn credentials.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Requires
+                          <span class="highlight">LinkedIn Client ID</span>
+                          and
+                          <span class="highlight">Client Secret</span> from
+                          the LinkedIn Developer Portal.
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="docs-artical__area mb-80 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/social.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End KYC Setting -->
+
+          <!-- start notification setting -->
+          <div id="notification-setting" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left" id="global-template">
+                  <div class="documentation-inner-page p-0" id="activation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        Notification Setting
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        Vdemy provides a flexible Notification Settings
+                        system to manage how users receive updates and alerts.
+                        You can configure different types of notifications
+                        based on your platform’s needs.
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item">
+                      <h6>Global Template</h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          A predefined structure for all notifications.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Ensures consistency across emails, ane SMS.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Can be customized with dynamic placeholders for
+                          user-specific details.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="docs-artical__area my-5 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/global_template.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item" id="email-setting">
+                      <h6>Email Setting</h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Configure email notifications for user activities,
+                          purchases, updates, and promotions.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Requires SMTP setup or third-party email services
+                          (e.g., Mailjet, SendGrid).
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Allows enabling/disabling email notifications for
+                          specific events.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="docs-artical__area my-5 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/email_setting.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item" id="sms-setting">
+                      <h6>SMS Setting</h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Send important notifications via SMS for order
+                          updates or alerts.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Requires integration with an SMS gateway (e.g.,
+                          Twilio, Nexmo, Clickatell, Infobip, Message Bird,
+                          SMS Broadcast, Text Magic, Custom API).
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Enable/disable SMS notifications based on
+                          preference.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="docs-artical__area my-5 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/sms_setting.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                  <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i>
+                  </span>
+                  <p class="right-sidebar-menu__title">On this page</p>
+                  <div class="right-sidebar-menu__list">
+                    <li class="right-sidebar-menu__item">
+                      <a href="#global-template" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Global Template</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#email-setting" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Email Setting</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#sms-setting" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>SMS Setting</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end notification setting -->
+
+          <!-- start payment gateway -->
+          <div id="payment-gateways" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left" id="automatic-gateways">
+                  <div class="documentation-inner-page p-0" id="activation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        Payment Gateways
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        Vdemy supports two types of payment gateways to
+                        process transactions securely: Automatic Payment
+                        Gateways and Manual Payment Gateways.
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item">
+                      <h6>Automatic Payment Gateway</h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Payments are processed instantly through third-party
+                          payment providers.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Requires API integration with supported payment
+                          services.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Transactions are completed automatically without
+                          manual verification.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Example:</span>
+                          Aamarpay, Authorize.net, BTCPay, Binance,
+                          Blockchain, Cashmaal, Checkout, Coinbase Commerce,
+                          Coingate, CoinPayments, CoinPayments Fiat,
+                          Flutterwave, Instamojo, Mercado Pago, Mollie, NMI,
+                          Now payments checkout, Now payments hosted, Payeer,
+                          Paypal, Paypal Express, PayStack, PayTM, Perfect
+                          Money, RazorPay, Skrill, SslCommerz, Stripe Hosted,
+                          Stripe Storefront, Stripe Checkout, 2Checkout
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="docs-artical__area my-5 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/automatic_gateways.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item" id="manual-gateways">
+                      <h6>Manual Payment Gateways</h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Payments are processed manually after verification.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Users submit payment details (e.g., bank transfer,
+                          offline payments).
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Admin must verify and approve the transaction before
+                          confirming the order.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Example:</span>
+                          Bank Transfer, Cash Payment, Cryptocurrency
+                          Transfer.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="docs-artical__area my-5 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/manual_gateways.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                  <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i>
+                  </span>
+                  <p class="right-sidebar-menu__title">On this page</p>
+                  <div class="right-sidebar-menu__list">
+                    <li class="right-sidebar-menu__item">
+                      <a href="#automatic-gateways" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Automatic Gateways</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#manual-gateways" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Manual Gateways</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end payment gateway -->
+
+          <!-- start setup payment -->
+          <div id="setup-payment-gateways" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left" id="setup-automatic-gateway">
+                  <div class="documentation-inner-page p-0" id="activation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        How to Setup Payment Gateways
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        The main problem of online business is accepting the
+                        payments. And we tried our level best to solve this
+                        problem. We have added 20+ Automated online payments
+                        gateways! YES, 30+ gateways. You can control all of
+                        them from the admin panel and you do not need any
+                        coding knowledge for that. Additionally, you can set
+                        manual gateways as well.
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item">
+                      <h6>How to setup automatic gateway</h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 1:</span>
+                          Enable a gateway that you want
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 2:</span>
+                          Click the edit button and go to the edit page of
+                          this gateway.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 3:</span>
+                          Provide required credentials.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 4:</span>
+                          Select a currency and click add new option. This
+                          select box is shown at the top of the page
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 5:</span>
+                          Provide currency title minimum and maximum deposit
+                          range, fixed and percentage charge, and rate to your
+                          site currency.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 6:</span>
+                          Click the submit button and your gateway is ready to
+                          receive payments if everything is ok.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="docs-artical__area my-5 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/automatic_gateway.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item" id="setup-manual-gateway">
+                      <h6>How to setup manual gateway</h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 1:</span>
+                          Click the "Add New" button. Now you'll be able to
+                          see a form to setup this gateway
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 2:</span>
+                          Provide basic required information.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 3:</span>
+                          Provide instruction to users. This instruction will
+                          show to users. This instruction is referrers that
+                          how to send the money.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 4:</span>
+                          Set some user data that you want. This is the proof
+                          of payment. After sending the payment you've to
+                          confirm that. So that you need payment proof. That's
+                          why you need to set up this section.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="docs-artical__area my-5 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/manual_gateway.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                  <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i>
+                  </span>
+                  <p class="right-sidebar-menu__title">On this page</p>
+                  <div class="right-sidebar-menu__list">
+                    <li class="right-sidebar-menu__item">
+                      <a href="#setup-automatic-gateway" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Setup Automatic Gateways</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#setup-manual-gateway" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Setup Manual Gateways</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end setup payment -->
+
+          <!-- start withdraw method -->
+          <div id="withdrawal-methods" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-9">
+                <div class="documentation-body__left" id="set-withdraw-process">
+                  <div class="documentation-inner-page p-0" id="activation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        Withdrawal Methods
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        Vdemy provides multiple withdrawal methods for
+                        sellers to securely withdraw their earnings. Users can
+                        choose a preferred method based on availability and
+                        convenience.
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item">
+                      <h6>Withdrawal Process</h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 1:</span>
+                          Choose a preferred withdrawal method.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 2:</span>
+                          Enter the required details.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 3:</span>
+                          Submit a withdrawal request.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 4:</span>
+                          The admin reviews and processes the request (if
+                          manual approval is required).
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item" id="set-withdraw-method">
+                      <h6>How to setup withdraw method</h6>
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 1:</span>
+                          Click the "Add New" button. Now you'll be able to
+                          see a form to setup this method
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 2:</span>
+                          Provide basic required information.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 3:</span>
+                          Provide instruction to users. This instruction will
+                          show to users. This instruction is referrers that
+                          how to make request for withdrawal.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Step 4:</span>
+                          Set some user data that you want. This is the proof
+                          of payment. After submitting the request you've to
+                          confirm that. So that you need a proof. That's why
+                          you need to set up this section.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="docs-artical__area my-5 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/withdraw.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 d-none d-xl-block">
+                <div class="right-sidebar-menu">
+                  <span class="sidebar-menu__close d-lg-none d-inline-flex"><i class="las la-times"></i>
+                  </span>
+                  <p class="right-sidebar-menu__title">On this page</p>
+                  <div class="right-sidebar-menu__list">
+                    <li class="right-sidebar-menu__item">
+                      <a href="#set-withdraw-process" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Setup Withdraw Process</span>
+                      </a>
+                    </li>
+                    <li class="right-sidebar-menu__item">
+                      <a href="#set-withdraw-method" class="right-sidebar-menu__link">
+                        <span class="text"><i class="las la-link me-1"></i>Setup Withdraw Method</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- start withdraw method -->
+
+          <!-- start seo configuration -->
+          <div id="seo-configuration" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-12">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="activation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        SEO Configuration
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        SEO now becomes a very important part of any website,
+                        and that is why we have added a simple but powerful
+                        SEO manager tool in the admin panel. Now you can set
+                        your SEO keywords, meta tag, and OG image from your
+                        admin panel without paying anyone. SEO setting is just
+                        one-click away.
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item">
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">SEO Image:</span>
+                          This image will show when you'll share the site link
+                          anywhere.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Meta Keywords:</span>
+                          Put here some keywords related to your site. This
+                          will help to rank your site to search engines.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Meta Description:</span>
+                          This description will show in search engines. Also,
+                          related descriptions will help to rank your website
+                          in search engines.
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Social Title: </span>
+                          This description will show below the title when
+                          sharing the link to social media.
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="docs-artical__area my-5 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/seo.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- start seo configuration -->
+
+          <!-- start manage frontend -->
+          <div id="manage-frontend" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-12">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="activation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">
+                        Manage Frontend
+                      </h2>
+                      <p class="documentation-body__top-desc">
+                        Vdemy allows you to customize and manage various
+                        frontend sections to enhance user experience and
+                        engagement. Below are the key sections and their
+                        purposes:
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item">
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          Benefit Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Ban Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Banner Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Become Author
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Collection Definition
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Contact Us
+                        </li>
+                        <li class="documentation-body__list-item">
+                          CTA Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Faq Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Feature Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Featured Author Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Featured Product Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Footer Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Free Product
+                        </li>
+                        <li class="documentation-body__list-item">
+                          KYC Content
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Latest Product Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Login Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Market Place Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Policy Pages
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Register Section
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Registration Disable
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Social Icons
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Upload Term
+                        </li>
+                        <li class="documentation-body__list-item">
+                          Weekly Best Selling
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="docs-artical__area my-5 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/frontend.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- start manage frontend -->
+
+          <!-- start language -->
+          <div id="language" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-12">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="activation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">Language</h2>
+                      <p class="documentation-body__top-desc">
+                        Nowadays, many website owners want to localize their
+                        websites. They want to set many languages so users can
+                        choose and see the website in their mother language.
+                        But they can not set as many other software providers
+                        don't give that option Built-in and they charge a high
+                        amount of money to set that, In our product, you need
+                        not to pay any single penny for that. we include a
+                        unique language manager where you can easily set any
+                        language within a very short time.
+                      </p>
+                    </div>
+
+                    <div class="docs-artical__area my-5 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/lang.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- start language -->
+
+          <!-- start extension -->
+          <div id="extension" class="pb-60 mb-60 border-bottom scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-12">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="activation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">Extension</h2>
+                      <p class="documentation-body__top-desc">
+                        It is a unique feature for you. We have added all the
+                        important and required plugins in our admin panel. You
+                        will have full control over these plugins and you can
+                        configure them as you want.
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item">
+                      <ul class="documentation-body__list mt-3">
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Google Recaptcha 2:</span>
+                          Google Recaptcha 2 is used for protect robotic
+                          request to your system. To get google recaptcha 2
+                          credentials
+                          <a href="https://www.google.com/recaptcha/admin/create" target="_blank">Click Here</a>
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Tawk.to:</span> Tawk.to is
+                          third party live chat platform. You can enable this
+                          extension by providing api key from
+                          <a href="https://www.tawk.to/" target="_blank">tawk.to</a>
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Custom Captcha:</span> This
+                          extension also protect robotic attack to your
+                          system. This is not third party extension. This is
+                          internal extension of our system
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Google Analytics:</span>
+                          This extension is used to track your visitors.
+                          Overview of your web page and visitors are tracked
+                          by google analytics. To get credentials of google
+                          analytics,
+                          <a href="https://analytics.google.com" target="_blank">Click Here</a>
+                        </li>
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Facebook Comment:</span>
+                          Facebook comment is used to manage blog's comments
+                          of our system. If you enable this, a facebook
+                          comment box will be shown in blog page. To get
+                          credentials of facebook comment,
+                          <a href="https://developers.facebook.com/" target="_blank">Click Here</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="docs-artical__area mt-80 each-item">
+                      <div class="docs-artical-item">
+                        <div class="docs-artical-item-thumb-update">
+                          <img src="./assets/images/plugin.png" alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- start extension -->
+
+          <!-- start support-->
+          <div id="support" class="scroll-element">
+            <div class="row gy-4">
+              <div class="col-xl-12">
+                <div class="documentation-body__left">
+                  <div class="documentation-inner-page p-0" id="activation-intro">
+                    <div class="documentation-body__top">
+                      <h2 class="documentation-body__top-title">Support</h2>
+                      <p class="documentation-body__top-desc">
+                        If you have any questions about this script, I'd be
+                        happy to help you. I'll try to help as best I can. If
+                        you have any questions, please don't hesitate to
+                        contact us in the Help Center.
+                      </p>
+                    </div>
+
+                    <div class="documentation-body__content-item each-item">
+                      <ul class="documentation-body__list">
+                        <li class="documentation-body__list-item">
+                          <span class="highlight">Email Us:</span>
+                          <a href="mailto:support@viserlab.com" class="t-link">
+                            support@viserlab.com
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- start extension -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== Dashboard End ==================== -->
+
+  <footer class="footer-area">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-md-12">
+          <div class="bottom-footer-wrapper justify-content-between flex-wrap gap-2 text-sm-center">
+            <p class="bottom-footer-text">
+              <a href="#" class="link-site">Vdemy</a> © 2025 All rights
+              reserved
+            </p>
+            <div class="bottom-footer-link">
+              <a href="https://viserlab.com/privacy-policy" target="_blank">Privacy Policy</a>
+              <a href="https://viserlab.com/terms-of-service" target="_blank">Terms &amp;
+                Conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Jquery JS -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap Bundle JS -->
+  <script src="assets/js/boostrap.bundle.min.js"></script>
+  <!-- Prism JS -->
+  <script src="assets/js/prism.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

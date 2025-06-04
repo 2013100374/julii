@@ -1,0 +1,17 @@
+.headerSkeleton {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.leftPart {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 100px 30%;
+    gap: 10px;
+}
+
+.rightPart {
+    flex: 0.1;
+    margin-left: auto;
+}
